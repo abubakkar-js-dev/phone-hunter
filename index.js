@@ -52,7 +52,6 @@ const displayAllPhones = (phones) =>{
 const handleSearch = () =>{
     document.getElementById('spinner').style.display = "block";
     const searchText = document.getElementById('search-box').value;
-    document.getElementById('phones-container').innerHTML = "";
     setTimeout(() => {
         loadAllPhones(false,searchText);
     }, 3000);
